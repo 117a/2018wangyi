@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="less/index.less" type="text/less">
+    <link rel="stylesheet/less" href="less/banner.less">
+    <link rel="stylesheet/less" href="less/music.less">
+    <link rel="stylesheet/less" href="less/login.less">
+    <script src="js/less.js"></script>
+    <script src="js/less-2.5.3.min.js"></script>
+    <link rel="icon" href="images/icon1.png" type="image/x-icon">
+</head>
+<body>
+<header>
+    <div class="top">
+        <div class="topMain clearfix">
+            <h1 class="logo"><a href="##"></a></h1>
+            <ul class="clearfix ulHover">
+                <li><a href="index.html" >发现音乐</a></li>
+                <li><a href="##" >我的音乐</a></li>
+                <li><a href="##" >朋友</a></li>
+                <li><a href="shopcenter.html">商城</a></li>
+                <li><a href="##" >音乐人</a></li>
+                <li class="hot"><a href="##">下载客户端</a>
+                    <sup></sup>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="音乐/视频/电台/用户">
+                <span></span>
+                <i>视频投稿</i>
+            </div>
+            <div class="login1">
+                <div class="loginTop">
+                    <a href="##" class="a1">登录</a>
+                    <span></span>
+                </div>
+                <div class="loginBottom">
+                    <i class="trigon"></i>
+                    <ul class="loginBox">
+                        <li><i></i><a href="##">手机号登录</a></li>
+                        <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                        <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                        <li><i></i><a href="weibo.html" target="_blank">新浪微博登录</a></li>
+                        <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phone">
+                <p>手机号登录</p>
+                <a class="back" href="##">×</a>
+                <div class="inputBox clearfix">
+                    <select name="" id="select1">
+                        <option value="+86">+86</option>
+                    </select>
+                    <input type="text" value="" class="tel only" placeholder="请输入账号" pattern="^1[35789]\d{10}">
+                    <input type="password" value="" class="pass" placeholder="请输入密码" pattern="\w{6,16}">
+                    <i></i>
+                    <em></em>
+                    <input type="checkbox" class="check" checked="checked">
+                    <label>自动登录</label>
+                    <a href="##" class="forget">忘记密码？</a>
+                    <!--<input type="button" value="登录" class="entry">-->
+                    <a href="##" class="entry" data-href="over.html">登录</a>
+                    <div class="line">
+                        <a href="##" class="left"><       其他登录方式</a>
+                        <a href="##" class="right">没有账号？免费注册 ></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="phone email">
+                <p>网易邮箱账号登录</p>
+                <a class="back" href="##">×</a>
+                <div class="inputBox">
+                    <input type="email" value="" class="tel num" placeholder="请输入账号">
+                    <ul class="address">
+                        <li><a href="##"></a></li>
+                        <li><a href="##"></a></li>
+                        <li><a href="##"></a></li>
+                        <li><a href="##"></a></li>
+                        <li><a href="##"></a></li>
+                        <li><a href="##"></a></li>
+                    </ul>
+                    <div class="none">
+                        <input type="password" value="" class="pass" placeholder="请输入密码">
+                        <i></i>
+                        <em></em>
+                        <input type="checkbox" class="check" checked="checked">
+                        <label>自动登录</label>
+                        <a href="##" class="forget">忘记密码？</a>
+                        <!--<input type="button" value="登录" class="entry">-->
+                        <a href="##" class="entry" data-href="over.html">登录</a>
+                    </div>
+                    <div class="line">
+                        <a href="##" class="left">< 其他登录方式</a>
+                    </div>
+                </div>
+            </div>
+            <div class="phone sign">
+                <p>登录</p>
+                <a class="back" href="##">×</a>
+                <div class="computer  clearfix">
+                    <div>
+                        <img src="images/platform.png" alt="">
+                        <input type="button" value="手机号登录" >
+                        <input type="button" value="注册" class="enroll">
+                    </div>
+                    <ul>
+                        <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                        <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                        <li><i></i><a href="weibo.html" target="_blank">微博登录</a></li>
+                        <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phone reg">
+                <p>手机号注册</p>
+                <a class="back" href="##">×</a>
+                <div class="inputBox">
+                    <span>手机号:</span>
+                    <select name="" id="select2">
+                        <option value="+86">+86</option>
+                    </select>
+                    <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                    <span>密码:</span>
+                    <input type="password" value="" class="pass" placeholder="请输入密码">
+                    <i></i>
+                    <em></em>
+                    <input type="button" value="下一步" class="entry">
+                    <div class="line">
+                        <a href="##" class="left">< 返回登录</a>
+                    </div>
+                </div>
+            </div>
+            <div class="phone reg">
+                <p>重设密码</p>
+                <a class="back" href="##">×</a>
+                <div class="inputBox">
+                    <span>手机号:</span>
+                    <select name="" id="select3">
+                        <option value="+86">+86</option>
+                    </select>
+                    <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                    <span>密码:</span>
+                    <input type="password" value="" class="pass" placeholder="请输入密码">
+                    <input type="button" value="下一步" class="entry">
+                    <div class="line">
+                        <a href="##" class="left">< 返回登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <ul class="clearfix">
+            <li><a href=""><em>推荐</em></a></li>
+            <li><a href=""><em>排行榜</em></a></li>
+            <li><a href=""><em>歌单</em></a></li>
+            <li><a href=""><em>主播电台</em></a></li>
+            <li><a href=""><em>歌手</em></a></li>
+            <li><a href=""><em>新碟上架</em></a></li>
+        </ul>
+    </nav>
+</header>
+<section id="banner">
+    <ul class="list">
+        <li class="li1"><img src="bannerImg/banner01.jpg" alt=""></li>
+        <li class="li2"><img src="bannerImg/banner02.jpg" alt=""></li>
+        <li class="li3"><img src="bannerImg/banner03.jpg" alt=""></li>
+        <li class="li4"><img src="bannerImg/banner04.jpg" alt=""></li>
+        <li class="li5"><img src="bannerImg/banner05.jpg" alt=""></li>
+        <li class="li6"><img src="bannerImg/banner06.jpg" alt=""></li>
+    </ul>
+    <ul id="tip" class="tip">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <img src="bannerImg/下载客户端.png" alt="" class="download">
+    <a class="arrowL arrow"><</a>
+    <a class="arrowR arrow">></a>
+</section>
+<div class="cont">
+    <div class="content main clearfix">
+        <div class="contentL">
+            <div class="recommend">
+                <div class="recommend-top clearfix">
+                    <h4><em></em><a href="">热门推荐</a></h4>
+                    <ul class="clearfix">
+                        <li><a href="##">华语</a><span></span></li>
+                        <li><a href="##">流行</a><span></span></li>
+                        <li><a href="##">摇滚</a><span></span></li>
+                        <li><a href="##">民谣</a><span></span></li>
+                        <li><a href="##">电子</a></li>
+                    </ul>
+                    <span class="more"><a href="##">更多</a><i></i></span>
+                </div>
+                <div class="recommend-cont">
+                    <ul class="clearfix">
+                        <li>
+                            <div class="box">
+                                <img src="images/pic1.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="##">治愈·音药‖一抹夕阳 恰似你的温柔</a></p>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/pic2.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="##">我们所怀念的，都是记忆里的自己而已</a></p>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/pic3.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="##">不怕汉子有文化，只怕他们有吉他</a></p>
+                        </li>
+                        <li class="noMargin">
+                            <div class="box">
+                                <img src="images/pic4.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="">此刻的样子，就是最好的生活</a></p>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/pic5.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="">鬼才分镜佳作 • 优质MV大赏</a></p>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/pic6.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="">你不知道我多羡慕你特立独行的样子</a></p>
+                        </li>
+                        <li>
+                            <div class="box">
+                                <img src="images/pic7.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+
+                            </div>
+                            <p><a href="">你不知道我多羡慕你特立独行的样子</a></p>
+                        </li>
+                        <li class="noMargin">
+                            <div class="box">
+                                <img src="images/pic8.jpg" alt="">
+                                <div class="listen">
+                                    <i></i>
+                                    <span>435万</span>
+                                    <em class="musicPlay"></em>
+                                </div>
+                            </div>
+                            <p><a href="">慢慢喜欢你 送给远方的你</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="dish">
+                <div class="dish-top clearfix">
+                    <h4><em></em><a href="">新碟推荐</a></h4>
+                    <span class="more"><a href="">更多</a><i></i></span>
+                </div>
+                <div class="dish-cont">
+                    <div class="arrowL" id="arrowL"></div>
+                    <div class="switch">
+                        <ul class="clearfix" id="list">
+                            <li class="clearfix">
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img1.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">The GREAT YOGA 数位Live 精选</a></p>
+                                    <p class="p2"><a href="">林宥嘉</a></p>
+                                </div>
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img2.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img3.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img4.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                                <div class="liBox noMar">
+                                    <div class="pic">
+                                        <img src="images/img5.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img6.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">The GREAT YOGA 数位Live 精选</a></p>
+                                    <p class="p2"><a href="">林宥嘉</a></p>
+                                </div>
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img7.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img8.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                                <div class="liBox">
+                                    <div class="pic">
+                                        <img src="images/img9.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                                <div class="liBox noMar">
+                                    <div class="pic">
+                                        <img src="images/img10.jpg" alt="">
+                                        <span class="musicPlay"></span>
+                                    </div>
+                                    <p><a href="">Over My Skin</a></p>
+                                    <p class="p2"><a href="">Tiffany Young</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="arrowR" id="arrowR"></div>
+                </div>
+            </div>
+            <div class="list clearfix">
+                <div class="list-top clearfix">
+                    <h4><em></em><a href="">榜单</a></h4>
+                    <span class="more"><a href="">更多</a><i></i></span>
+                </div>
+                <div class="list-left">
+                    <div class="box clearfix">
+                        <div class="pic"><a href="##"><img src="images/biao.jpg" alt=""></a></div>
+                        <div class="tit">
+                            <h5><a href="##">云音乐飙升榜</a></h5>
+                            <a href="##" class="btnL"></a>
+                            <a href="##" class="btnR"></a>
+                        </div>
+                    </div>
+                    <ul class="oUl">
+                        <li>
+                            <span class="red">1</span>
+                            <p><a href="">往后余生（翻自 马良）</a></p>
+                        </li>
+                        <li><span class="red">2</span>
+                            <p><a href="">肆无忌惮</a></p>
+                        </li>
+                        <li><span class="red">3</span>
+                            <p><a href="">鱼辞</a></p>
+                        </li>
+                        <li><span>4</span>
+                            <p><a href="">Waiting For</a></p>
+                        </li>
+                        <li><span>5</span>
+                            <p><a href="">往后余生</a></p>
+                        </li>
+                        <li><span>6</span>
+                            <p><a href="">纸短情长</a></p>
+                        </li>
+                        <li><span>7</span>
+                            <p><a href="">空空如也</a></p>
+                        </li>
+                        <li><span>8</span>
+                            <p><a href="">离人愁</a></p>
+                        </li>
+                        <li><span>9</span>
+                            <p><a href="">再见</a></p>
+                        </li>
+                        <li><span class="lastSpan">10</span>
+                            <p><a href="">朋友</a></p>
+                        </li>
+                        <li>
+                            <p class="lastP"><a href="">查看全部></a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-center">
+                    <div class="box clearfix">
+                        <div class="pic"><a href="##"><img src="images/new.jpg" alt=""></a></div>
+                        <div class="tit">
+                            <h5><a href="##">云音乐新歌榜</a></h5>
+                            <a href="##" class="btnL"></a>
+                            <a href="##" class="btnR"></a>
+                        </div>
+                    </div>
+                    <ul class="oUl">
+                        <li>
+                            <span class="red">1</span>
+                            <p><a href="">往后余生（翻自 马良）</a></p>
+                        </li>
+                        <li><span class="red">2</span>
+                            <p><a href="">肆无忌惮</a></p>
+                        </li>
+                        <li><span class="red">3</span>
+                            <p><a href="">鱼辞</a></p>
+                        </li>
+                        <li><span>4</span>
+                            <p><a href="">Waiting For</a></p>
+                        </li>
+                        <li><span>5</span>
+                            <p><a href="">往后余生</a></p>
+                        </li>
+                        <li><span>6</span>
+                            <p><a href="">纸短情长</a></p>
+                        </li>
+                        <li><span>7</span>
+                            <p><a href="">空空如也</a></p>
+                        </li>
+                        <li><span>8</span>
+                            <p><a href="">离人愁</a></p>
+                        </li>
+                        <li><span>9</span>
+                            <p><a href="">再见</a></p>
+                        </li>
+                        <li><span class="lastSpan">10</span>
+                            <p><a href="">朋友</a></p>
+                        </li>
+                        <li>
+                            <p class="lastP"><a href="">查看全部></a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="list-right">
+                    <div class="box clearfix">
+                        <div class="pic"><a href="##"><img src="images/yuan.jpg" alt=""></a></div>
+                        <div class="tit">
+                            <h5><a href="##">云音乐原创榜</a></h5>
+                            <a href="##" class="btnL"></a>
+                            <a href="##" class="btnR"></a>
+                        </div>
+                    </div>
+                    <ul class="oUl">
+                        <li>
+                            <span class="red">1</span>
+                            <p><a href="">往后余生（翻自 马良）</a></p>
+                        </li>
+                        <li><span class="red">2</span>
+                            <p><a href="">肆无忌惮</a></p>
+                        </li>
+                        <li><span class="red">3</span>
+                            <p><a href="">鱼辞</a></p>
+                        </li>
+                        <li><span>4</span>
+                            <p><a href="">Waiting For</a></p>
+                        </li>
+                        <li><span>5</span>
+                            <p><a href="">往后余生</a></p>
+                        </li>
+                        <li><span>6</span>
+                            <p><a href="">纸短情长</a></p>
+                        </li>
+                        <li><span>7</span>
+                            <p><a href="">空空如也</a></p>
+                        </li>
+                        <li><span>8</span>
+                            <p><a href="">离人愁</a></p>
+                        </li>
+                        <li><span>9</span>
+                            <p><a href="">再见</a></p>
+                        </li>
+                        <li><span class="lastSpan">10</span>
+                            <p><a href="">朋友</a></p>
+                        </li>
+                        <li>
+                            <p class="lastP"><a href="">查看全部></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentR">
+            <div class="top">
+                <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+                <a href="##">用户登录</a>
+            </div>
+            <div class="singer">
+                <div class="singer-top">
+                    <h5>入驻歌手<span class="more"><a href="">查看全部></a></span></h5>
+                </div>
+                <div class="singer-cont">
+                    <ul>
+                        <li>
+                            <a href=""><img src="images/sing1.jpg" alt=""></a>
+                            <a href="" class="singerBox">
+                                <h5>张惠妹</h5>
+                                <p>台湾歌手张惠妹</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/sing2.jpg" alt=""></a>
+                            <a href="" class="singerBox">
+                                <h5>Fine乐团</h5>
+                                <p>独立音乐人</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/sing3.jpg" alt=""></a>
+                            <a href="" class="singerBox">
+                                <h5>万晓利</h5>
+                                <p>民谣歌手</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/sing4.jpg" alt=""></a>
+                            <a href="" class="singerBox">
+                                <h5>音乐人赵雷</h5>
+                                <p>民谣歌手</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/sing5.jpg" alt=""></a>
+                            <a href="" class="singerBox">
+                                <h5>王三洑</h5>
+                                <p>音乐人</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="anchor">
+                <div class="anchor-top">
+                    <h5>热门主播</h5>
+                </div>
+                <div class="anchorCont">
+                    <ul>
+                        <li>
+                            <img src="images/zhu1.jpg" alt="">
+                            <div class="anchorBox">
+                                <h5><a href="##">陈立</a></h5>
+                                <p>心理学家、美食家陈立教授</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/zhu2.jpg" alt="">
+                            <div class="anchorBox">
+                                <h5><a href="##">DJ艳秋</a></h5>
+                                <p>著名音乐节目主持人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/zhu3.jpg" alt="">
+                            <div class="anchorBox">
+                                <h5><a href="##">国家大剧院古典音乐频道</a></h5>
+                                <p>国家大剧院古典音乐官方</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/zhu4.jpg" alt="">
+                            <div class="anchorBox">
+                                <h5><a href="##">谢谢收听</a></h5>
+                                <p>南京电台主持人王馨</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/zhu5.jpg" alt="">
+                            <div class="anchorBox">
+                                <h5><a href="##">DJ小苏</a></h5>
+                                <p>独立DJ，CRI环球旅游广播</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="backTop">TOP</div>
+</div>
+<footer><img src="images/footer.png" alt=""></footer>
+<section id="music">
+    <div class="main">
+        <img src="images/music/prv.png" alt="" class="prv">
+        <div class="musicPlay"></div>
+        <img src="images/music/nex.png" alt="" class="nex">
+        <div class="song">
+            <img src="images/music/songImg.png" alt="" class="songImg">
+            <span class="songName">Handclap thepoo</span>
+            <span class="singer">Tantrums</span>
+        </div>
+        <div class="songTime">
+            <div class="runLine">
+                <div class="btn" id="btn"></div>
+                <div class="innerL"></div>
+            </div>
+            <span class="runTime"><a>00:00</a>/04:35</span>
+        </div>
+    </div>
+    <audio src="kk.m4a" preload="none" id="audio"></audio>
+</section>
+</body>
+</html>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+<script src="js/banner.js"></script>
+

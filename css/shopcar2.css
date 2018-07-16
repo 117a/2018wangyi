@@ -1,0 +1,326 @@
+.n-cart .first .icon i, .n-cart .check .checkbox, .n-cart .check .z-checked, .n-cart .bottom i {
+    background: url(../img/cart.png) no-repeat 0 9999px;
+}
+
+.n-cart .first .drop i, .n-cart .first .right i, .n-cart .first .delete i, .n-cart .empty i {
+    background: url(../img/cart2.png) no-repeat 0 9999px;
+}
+
+.root {
+    min-height: 800px;
+}
+
+.m-bread {
+    margin-bottom: 0;
+}
+
+.m-bread .block {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.m-bread .block a {
+    text-decoration: none;
+}
+
+.mid-txt2 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+}
+
+.n-cart i {
+    display: inline-block;
+}
+
+.n-cart .head {
+    width: 100%;
+    height: 66px;
+    line-height: 66px;
+    font-size: 14px;
+}
+
+.n-cart .head .check i {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.n-cart .coverwrap {
+    width: 100px;
+}
+
+.n-cart .product {
+    width: 404px;
+}
+
+.n-cart .pri1 {
+    width: 116px;
+}
+
+.n-cart .num {
+    width: 108px;
+    margin: 0 79px 0 42px;
+}
+
+.n-cart .pri2 {
+    width: 110px;
+}
+
+.n-cart ul {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e5e5 \0;
+    font-size: 14px;
+}
+
+.n-cart ul li.first {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    background: url(../img/bgg.png) repeat-x;
+}
+
+.n-cart .first .product {
+    margin-left: 60px;
+}
+
+.n-cart .first .icon {
+    margin-right: 12px;
+}
+
+.n-cart .first .icon i {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 44px;
+    height: 20px;
+    background-position: 0px -36px;
+}
+
+.n-cart .first .txt {
+    margin-right: 12px;
+}
+
+.n-cart .first .link {
+    margin-right: 20px;
+}
+
+.n-cart .first .link a {
+    text-decoration: none;
+}
+
+.n-cart .first .link i {
+    display: inline-block;
+    background: url(../../web/css/cart);
+}
+
+.n-cart ul li {
+    width: 100%;
+    height: 117px;
+    overflow: hidden;
+}
+
+.n-cart .check .checkbox {
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.n-cart .check .checkbox {
+    background-position: -118px -0px;
+}
+
+.n-cart .check .z-checked {
+    background-position: -54px -36px;
+}
+
+.n-cart .cnt {
+    width: 1036px;
+}
+
+.n-cart .cnt img {
+    width: 80px;
+    height: 80px;
+    margin-top: 19px;
+    background-color: #f5f5f5;
+}
+
+.n-cart .cnt .price {
+    width: 116px;
+    height: 117px;
+    line-height: 117px;
+}
+
+.n-cart .cnt .line {
+    color: #d33a31;
+}
+
+.n-cart .cnt .msg {
+    margin: 38px 66px 0 0;
+}
+
+.n-cart .cnt .msg2 {
+    margin: 52px 66px 0 0;
+}
+
+.n-cart .cnt .tit {
+    width: 340px;
+}
+
+.n-cart .cnt .sku {
+    width: 340px;
+    margin-top: 8px;
+}
+
+.n-cart .cnt .ctrl {
+    top: 46px;
+    width: 133px;
+    height: 26px;
+    margin: -5px 49px 0 42px;
+}
+
+.n-cart .cnt .delete {
+    position: relative;
+    z-index: 99;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    margin: 50px 60px 0 0;
+    background: url(../img/cha.png);
+    cursor: pointer;
+}
+
+.n-cart .cnt .delete:hover {
+    background: url(../img/cha_hover.png);
+    cursor: pointer;
+}
+
+.n-cart ul li.bottom {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #f2f2f2;
+    overflow: hidden;
+    line-height: 50px;
+}
+
+.n-cart .bottom i {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 20px;
+    background-position: -118px -0px;
+}
+
+.n-cart .bottom .check .checkbox {
+    top: 5px;
+}
+
+.n-cart .bottom .paybtn {
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 30px;
+    font-size: 16px;
+    background-color: #d33a31;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.n-cart .bottom .z-dis {
+    width: 160px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: #ccc;
+    color: #fff;
+}
+
+.n-cart .first a {
+    text-decoration: none;
+}
+
+.n-cart .first a span {
+    position: relative;
+    top: -2px;
+}
+
+.n-cart .first .drop i {
+    width: 15px;
+    height: 10px;
+    margin: 0 22px;
+    background-position: -26px -166px;
+}
+
+.n-cart .first .right i {
+    width: 10px;
+    height: 15px;
+    margin: 0 25px;
+    background-position: 0px -191px;
+}
+
+.n-cart .first .delete {
+    margin-right: 20px;
+}
+
+.n-cart .first .delete i {
+    top: 3px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: 0px -165px;
+}
+
+.n-cart .invalid {
+    margin-top: 30px;
+}
+
+.n-cart .invalid .first a {
+    vertical-align: sub;
+}
+
+.n-cart .invalid .ctrl {
+    text-align: center;
+}
+
+.n-cart .invalid .cover {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.n-cart .cnt .zdex {
+    z-index: 99;
+    opacity: 0.7;
+}
+
+.n-cart .empty {
+    width: 320px;
+    height: 150px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+.n-cart .empty i {
+    display: block;
+    width: 140px;
+    height: 125px;
+    margin: 0 auto 10px auto;
+    padding-left: 14px;
+    background-position: 0px -0px;
+}
