@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="">
 
     <link rel="stylesheet/less" href="css/css.less">
+
     <script src="js/less.js"></script>
 
 </head>
@@ -19,7 +20,7 @@
     <div class="header">
         <div class="nav">
             <div class="log">
-                <a href="http://music.163.com/store/product"></a>
+                <a href="shopcenter.html"></a>
             </div>
             <div class="search">
                 <div class="search_box">
@@ -50,21 +51,168 @@
 
             </div>
             <div class="shopping_cart">
-                <a href="购物车.html" onclick="add_shoppingcart()">
+                <a href="购物车.html">
                     <span class="num">0</span>
                 </a>
             </div>
-            <div class="user">
-                <div class="select_list">登录</div>
-                <ul>
-                    <li><a href="javascript:;"><span></span></a></li>
-                    <li><a href="javascript:;"><span></span></a></li>
-                    <li><a href="javascript:;"><span></span></a></li>
-                    <li><a href="javascript:;"><span></span></a></li>
-                    <li><a href="javascript:;"><span></span></a></li>
-                </ul>
+            <div class="top">
+            <div class="topMain">
+                <div class="login1">
+                    <div class="loginTop">
+                        <a href="##" class="a1">登录</a>
+                        <span></span>
+                    </div>
+                    <div class="loginBottom">
+                        <i class="trigon"></i>
+                        <ul class="loginBox">
+                            <li><i></i><a href="##">手机号登录</a></li>
+                            <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                            <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                            <li><i></i><a href="weibo.html" target="_blank">新浪微博登录</a></li>
+                            <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone">
+                    <p>手机号登录</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox clearfix">
+                        <select name="" id="select1">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" value="" class="tel only" placeholder="请输入账号" pattern="^1[35789]\d{10}">
+                        <input type="password" value="" class="pass" placeholder="请输入密码" pattern="\w{6,16}">
+                        <i></i>
+                        <em></em>
+                        <input type="checkbox" class="check" checked="checked">
+                        <label>自动登录</label>
+                        <a href="##" class="forget">忘记密码？</a>
+                        <!--<input type="button" value="登录" class="entry">-->
+                        <a href="##" class="entry" data-href="over.html">登录</a>
+                        <div class="line">
+                            <a href="##" class="left"><       其他登录方式</a>
+                            <a href="##" class="right">没有账号？免费注册 ></a>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="phone email">
+                    <p>网易邮箱账号登录</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox">
+                        <input type="email" value="" class="tel num" placeholder="请输入账号">
+                        <ul class="address">
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                        </ul>
+                        <div class="none">
+                            <input type="password" value="" class="pass" placeholder="请输入密码">
+                            <i></i>
+                            <em></em>
+                            <input type="checkbox" class="check" checked="checked">
+                            <label>自动登录</label>
+                            <a href="##" class="forget">忘记密码？</a>
+                            <!--<input type="button" value="登录" class="entry">-->
+                            <a href="##" class="entry" data-href="over.html">登录</a>
+                        </div>
+                        <div class="line">
+                            <a href="##" class="left">< 其他登录方式</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone sign">
+                    <p>登录</p>
+                    <a class="back" href="##">×</a>
+                    <div class="computer  clearfix">
+                        <div>
+                            <img src="images/platform.png" alt="">
+                            <input type="button" value="手机号登录" >
+                            <input type="button" value="注册" class="enroll">
+                        </div>
+                        <ul>
+                            <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                            <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                            <li><i></i><a href="weibo.html" target="_blank">微博登录</a></li>
+                            <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone reg">
+                    <p>手机号注册</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox">
+                        <span>手机号:</span>
+                        <select name="" id="select2">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                        <span>密码:</span>
+                        <input type="password" value="" class="pass" placeholder="请输入密码">
+                        <i></i>
+                        <em></em>
+                        <input type="button" value="下一步" class="entry">
+                        <div class="line">
+                            <a href="##" class="left">< 返回登录</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone reg">
+                    <p>重设密码</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox">
+                        <span>手机号:</span>
+                        <select name="" id="select3">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                        <span>密码:</span>
+                        <input type="password" value="" class="pass" placeholder="请输入密码">
+                        <input type="button" value="下一步" class="entry">
+                        <div class="line">
+                            <a href="##" class="left">< 返回登录</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            </div>
+            <!--<div class="user">-->
+                <!--<div class="select_list">登录</div>-->
+                <!--<ul>-->
+                    <!--<li><a href="javascript:;"><span></span></a></li>-->
+                    <!--<li><a href="javascript:;"><span></span></a></li>-->
+                    <!--<li><a href="javascript:;"><span></span></a></li>-->
+                    <!--<li><a href="javascript:;"><span></span></a></li>-->
+                    <!--<li><a href="javascript:;"><span></span></a></li>-->
+                <!--</ul>-->
+
+            <!--</div>-->
+        </div>
+    </div>
+    <div id="top" style="display: block;">
+        <div class="st">
+            <div>100%</div>
+            正品
+        </div>
+        <div class="sc1">
+            七天无理由退货
+        </div>
+        <div class="sc2">
+            <a href="购物车.html">
+                <img src="img/4.png" alt="">
+                购物车
+                <div class="inner numcy">17</div>
+            </a>
+        </div>
+        <div class="et">
+            <div><img src="img/er.png" alt=""></div>
+            客服
+        </div>
+        <div id="ett" style="display: block;">
+            <img src="img/top.png" alt="">
         </div>
     </div>
     <div class="details_body">
@@ -82,46 +230,31 @@
             <div class="d_cb">
                 <div class="pic">
                     <div class="small_img">
-                        <img src="images/smallHeadPhone-R.jpg" alt="">
+                        <img src="images/1.jpg" alt="">
                         <div class="small_mask"></div>
                     </div>
                     <div class="big_img">
-                        <img src="images/bigHeadPhone-R.jpg" alt="">
+                        <img src="images/1_1.jpg" alt="">
                     </div>
-                    <span class="arrowLeft"></span>
-                    <span class="arrowRight"></span>
+                    <span class='arrowL'>
+                        <span class="arrowLeft"></span>
+                    </span>
+                    <span class="arrowR">
+                        <span class="arrowRight"></span>
+                    </span>
                     <div class="b_num">
                         <em class="numctn">
-                            <em id="j-banneridx">1
-                            </em>"/8"</em>
+                            <em id="j-banneridx">1</em>
+                            /8
+                        </em>
                     </div>
                 </div>
                 <div class="imgnav">
                     <ul>
-                        <li><img
+                        <!--<li><img
                                 src="http://p4.music.126.net/ZO5RODq8mKyvBlGKoUoqXw==/109951163334289022.jpg?param=76y76"
                                 alt=""></li>
-                        <li><img
-                                src="http://p3.music.126.net/6aDnbjpIXNFSkDL4hT5plg==/109951163334284728.jpg?param=76y76"
-                                alt=""></li>
-                        <li><img
-                                src="http://p3.music.126.net/ew6HSbzeXHpD37rKhvqXEw==/109951163334279377.jpg?param=76y76"
-                                alt=""></li>
-                        <li><img
-                                src="http://p3.music.126.net/itPPKRaoncOW8_bZ9exqKw==/109951163334278957.jpg?param=76y76"
-                                alt=""></li>
-                        <li><img
-                                src="http://p4.music.126.net/GMWh70d3HU9vfr-g6xZjgA==/109951163334285230.jpg?param=76y76"
-                                alt=""></li>
-                        <li><img
-                                src="http://p4.music.126.net/6yRisH65amHvbd8NP3yt8Q==/109951163334283314.jpg?param=76y76"
-                                alt=""></li>
-                        <li><img
-                                src="http://p3.music.126.net/l12fyU2uaSJ_9_jv1kd7wg==/109951163334281855.jpg?param=76y76"
-                                alt=""></li>
-                        <li><img
-                                src="http://p3.music.126.net/ADpepDTeLHerOXpLn-WFuA==/109951163334287528.jpg?param=76y76"
-                                alt=""></li>
+                        -->
                     </ul>
                 </div>
             </div>
@@ -145,19 +278,7 @@
                     <div class="color_list">
                         <div class="title">颜色：</div>
                         <ul>
-                            <li class="select">黑色</li>
-                            <li>金色</li>
-                            <li>银色</li>
-                            <li>紫色</li>
-                            <li>玫瑰金</li>
-                            <li>炫黑金</li>
-                            <li>炫白色</li>
-                            <li>橘红色</li>
-                            <li>沥青灰</li>
-                            <li>深砖红</li>
-                            <li>深海蓝</li>
-                            <li>哑光银</li>
-                            <li>哑光金</li>
+                            <!--<li class="select">黑色</li>-->
                         </ul>
                     </div>
                     <div class="count">
@@ -165,7 +286,7 @@
                         <div class="number">
                             <a href="##" class="down" onclick="decrease()"><i></i></a>
                             <span class="total"><input type="text" value="1" class="cyNum"></span>
-                            <a href="##" class="plus " onclick="increase()"><i></i></a>
+                            <a href="##" class="plus" onclick="increase1(this)"><i></i></a>
                         </div>
                     </div>
                 </div>
@@ -179,8 +300,8 @@
 
                 </div>
                 <div class="buyshopBtn">
-                    <a href="" class="buy">立即购买</a>
-                    <a href="##" class="add_to_cart" onclick="details.addCarts()">加入购物车</a>
+                    <a href="##" class="buy">立即购买</a>
+                    <a href="##" class="add_to_cart" onclick="addCarts()">加入购物车</a>
                 </div>
             </div>
             <div class="d_content">
@@ -316,11 +437,53 @@
 </div>
 </body>
 </html>
-<script src="js/jquery.min-1.11.3.js">
-</script>
-<script src="js/shopcartcy.js">
-</script>
-<script src="js/details.js">
+<script src="js/jquery.min-1.11.3.js"></script>
+<script src="js/details.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/shopcartcy.js"></script>
+<script src="js/login.js"></script>
+<script>
+    let back=document.getElementById("top");
+    var pic=document.getElementById("ett");
+    let banner=document.getElementsByClassName("details_body")[0];
+    let bannert=banner.offsetTop+banner.offsetHeight;
+    window.onscroll=function () {
+        console.log(1);
+        let scrollT=utils.win("scrollTop");
+        let winH=utils.win("clientHeight");
+        console.log(winH);
+        let s=winH/3;
+        if(scrollT>=winH-600){
+            pic.style.display="block";
+        }else {
+            pic.style.display="none"
+        }
+        // if(scrollT>=bannert){
+        //     back.style.display="block";
+        //     // back.style.right="4%";
+        //     // back.style.top="50%"
+        // }
+        // else if(scrollT<=bannert){
+        //     back.style.display="none";
+        // }
+    };
 
+    let d=500;
+    let i=15;
+    pic.onclick=function () {
+        let target=utils.win("scrollTop");
+        let step=i/d*target;
+        let timer=window.setInterval(()=>{
+            let cur=utils.win("scrollTop");
+            cur-=step;
+            if(cur<=0){
+                clearInterval(timer);
+                utils.win("scrollTop",0);
+                return;
+            }
+            utils.win("scrollTop",cur)
+        },i)
+    };
 </script>
-

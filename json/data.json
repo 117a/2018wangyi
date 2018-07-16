@@ -1,8 +1,19 @@
 [
-  {"img":"./img/banner1.jpg","text":"2018珠峰课程大纲"},
-  {"img":"./img/banner2.png","text":"2018珠峰课程大纲"},
-  {"img":"./img/banner3.jpg","text":"2018珠峰课程大纲"},
-  {"img":"./img/banner4.jpg","text":"2018珠峰课程大纲"},
-  {"img":"./img/banner5.jpg","text":"2018珠峰课程大纲"},
-  {"img":"./img/banner6.jpg","text":"2018珠峰课程大纲"}
+  [
+  {"id":"0","simg":["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg","images/5.jpg","images/6.jpg","images/7.jpg","images/8.jpg"],"bimg":["images/1_1.jpg","images/2_1.jpg","images/3_1.jpg","images/4_1.jpg","images/5_1.jpg","images/6_1.jpg","images/7_1.jpg","images/8_1.jpg"],"imgnav":["images/1_nav.jpg","images/2_nav.jpg","images/3_nav.jpg","images/4_nav.jpg","images/5_nav.jpg","images/6_nav.jpg","images/7_nav.jpg","images/8_nav.jpg"]}
+  ],
+  [
+    {"color":"黑色","simg":["images/黑1.jpg","images/黑2.jpg","images/黑3.jpg"],"bimg":["images/黑1_1.jpg","images/黑2_1.jpg","images/黑3_1.jpg"],"imgnav":["images/黑1_nav.jpg","images/黑2_nav.jpg","images/黑3_nav.jpg"]},
+    {"color":"金色","simg":["images/金1.jpg","images/金2.jpg"],"bimg":["images/金1_1.jpg","images/金2_1.jpg"],"imgnav":["images/金1_nav.jpg","images/金2_nav.jpg"]},
+    {"color":"银色","simg":["images/银1.jpg","images/银2.jpg"],"bimg":["images/银1_1.jpg","images/银2_1.jpg"],"imgnav":["images/银1_nav.jpg","images/银2_nav.jpg"]},
+    {"color":"玫瑰金","simg":["images/玫瑰金1.jpg","images/玫瑰金2.jpg","images/玫瑰金3.jpg"],"bimg":["images/玫瑰金1_1.jpg","images/玫瑰金2_1.jpg","images/玫瑰金3_1.jpg"],"imgnav":["images/玫瑰金1_nav.jpg","images/玫瑰金2_nav.jpg","images/玫瑰金3_nav.jpg"]},
+    {"color":"炫黑色","simg":["images/炫黑色1.jpg","images/炫黑色2.jpg","images/炫黑色3.jpg"],"bimg":["images/炫黑色1_1.jpg","images/炫黑色2_1.jpg","images/炫黑色3_1.jpg"],"imgnav":["images/炫黑色1_nav.jpg","images/炫黑色2_nav.jpg","images/炫黑色3_nav.jpg"]},
+    {"color":"炫白色","simg":["images/炫白色1.jpg","images/炫白色2.jpg"],"bimg":["images/炫白色1_1.jpg","images/炫白色2_1.jpg"],"imgnav":["images/炫白色1_nav.jpg","images/炫白色2_nav.jpg"]},
+    {"color":"哑光金","simg":["images/哑光金1.jpg","images/哑光金2.jpg","images/哑光金3.jpg","images/哑光金4.jpg"],"bimg":["images/哑光金1_1.jpg","images/哑光金2_1.jpg","images/哑光金3_1.jpg","images/哑光金4_1.jpg"],"imgnav":["images/哑光金1_nav.jpg","images/哑光金2_nav.jpg","images/哑光金3_nav.jpg","images/哑光金4_nav.jpg"]},
+    {"color":"橘红色","simg":["images/橘红色1.jpg","images/橘红色2.jpg","images/橘红色3.jpg"],"bimg":["images/橘红色1_1.jpg","images/橘红色2_1.jpg","images/橘红色3_1.jpg"],"imgnav":["images/橘红色1_nav.jpg","images/橘红色2_nav.jpg","images/橘红色3_nav.jpg"]},
+    {"color":"紫色","simg":["images/紫1.jpg","images/紫2.jpg","images/紫3.jpg"],"bimg":["images/紫1_1.jpg","images/紫2_1.jpg","images/紫3_1.jpg"],"imgnav":["images/紫1_nav.jpg","images/紫2_nav.jpg","images/紫3_nav.jpg"]},
+    {"color":"沥青灰","simg":["images/沥青灰1.jpg"],"bimg":["images/沥青灰1_1.jpg"],"imgnav":["images/沥青灰1_nav.jpg"]},
+    {"color":"深砖红","simg":["images/深砖红1.jpg"],"bimg":["images/深砖红1_1.jpg"],"imgnav":["images/深砖红1_nav.jpg"]},
+    {"color":"深海蓝","simg":["images/蓝1.jpg"],"bimg":["images/蓝1_1.jpg"],"imgnav":["images/蓝1_nav.jpg"]}
+  ]
 ]

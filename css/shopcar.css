@@ -2052,7 +2052,7 @@ div.m-layer .ztr span.err i, div.m-layer .ztel span.err i {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background: url(../../web/img/border.png?5796f669ad5bc188de1963c0b96ab1af) repeat-x;
+    background: url(../img/border.png) repeat-x;
 }
 
 .m-header .m-logo {
