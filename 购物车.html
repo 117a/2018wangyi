@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>购物车</title>
     <!--<base href="/" target="_self">-->
+
     <link href="css/shopcar.css" type="text/css"
           rel="stylesheet">
     <link rel="shortcut icon" href="//s1.music.126.net/music.ico?v1">
@@ -11,6 +12,7 @@
     <meta property="qc:admins" content="27354635321361636375">
     <meta name="applicable-device" content="pc">
     <meta name="robots" content="nofollow">
+    <link rel="stylesheet/less" href="less/login.less">
     <link href="css/shopcar2.css" type="text/css"  rel="stylesheet">
     <!--<script src="https://zz.bdstatic.com/linksubmit/push.js"></script>-->
     <!--<script type="text/javascript" async="" src="//nos.netease.com/apmsdk/napm-web-min-1.1.6.js"></script>-->
@@ -35,25 +37,8 @@
             <!--"validNum": 4-->
         <!--};-->
     <!--</script>-->
-    <style type="text/css">.auto-1530784654699 {
-        position: fixed;
-        _position: absolute;
-        z-index: 100;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
-    }
+    <style type="text/css">
 
-    .auto-1530784654700 {
-        position: absolute;
-        z-index: 1000;
-        border: 1px solid #aaa;
-        background: #fff;
-    }
 
     .auto-1530784654700 .zbar {
         line-height: 30px;
@@ -79,34 +64,6 @@
         line-height: 20px;
         cursor: pointer;
     }
-
-    .auto-1530784654701 {
-        position: absolute;
-        background: #fff;
-    }
-
-    .u-atlist {
-        position: absolute;
-        z-index: 10000;
-    }
-
-    .f-thide.selected-item {
-        background-color: #eee;
-    }
-
-    #shadow-box {
-        position: absolute;
-        display: block;
-        left: 450px;
-        top: 1020px;
-        border: 1px solid black;
-        word-wrap: break-word;
-        display: none;
-        opacity: 0;
-        filter: Alpha(opacity=0);
-        z-index: -1000;
-    }
-
     .j-item.j-selected a {
         background: #eee;
         text-decoration: none;
@@ -135,12 +92,13 @@
         background: #bbb;
     }
     </style>
+    <script src="js/less (1).js"></script>
 </head>
 <body id="auto-id-GK8NhtR9c7ChNLdl">
 <div id="g_top" data-module="store" class="m-header f-pr">
     <div class="m-nav f-cb f-pr">
         <div class="m-logo f-fl">
-            <a href="javascript:;" data-action="home"></a>
+            <a href="shopcenter.html" data-action="home"></a>
         </div>
         <div class="m-search f-fl" id="m-search">
             <div>
@@ -159,37 +117,130 @@
                 <span class="s-flag num f-pa j-cartnum cyNumLeft">1</span>
             </a>
         </div>
-        <div class="m-user f-fl" id="m-user">
-            <div class="m-select f-pr">
-                <!--Regular if2-->
-                <img class="avatar"
-                     src="http://p4.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg?param=36y36">
+        <div class="top" style="position: absolute;top: 0; right: -10%">
+            <div class="topMain ">
+                <div class="login1">
+                    <div class="loginTop">
+                        <a href="##" class="a1">登录</a>
+                        <span></span>
+                    </div>
+                    <div class="loginBottom">
+                        <i class="trigon"></i>
+                        <ul class="loginBox">
+                            <li><i></i><a href="##">手机号登录</a></li>
+                            <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                            <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                            <li><i></i><a href="weibo.html" target="_blank">新浪微博登录</a></li>
+                            <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone">
+                    <p>手机号登录</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox clearfix">
+                        <select name="" id="select1">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" value="" class="tel only" placeholder="请输入账号" pattern="^1[35789]\d{10}">
+                        <input type="password" value="" class="pass" placeholder="请输入密码" pattern="\w{6,16}">
+                        <i></i>
+                        <em></em>
+                        <input type="checkbox" class="check" checked="checked">
+                        <label>自动登录</label>
+                        <a href="##" class="forget">忘记密码？</a>
+                        <!--<input type="button" value="登录" class="entry">-->
+                        <a href="##" class="entry" data-href="over.html">登录</a>
+                        <div class="line">
+                            <a href="##" class="left"><       其他登录方式</a>
+                            <a href="##" class="right">没有账号？免费注册 ></a>
+                        </div>
 
-                <ul style="display: none;">
-                    <!--Regular list-->
-                    <li data-action="order">
-                        <a class="f-pr s-fc0"><em class="order"></em>我的订单<span class="f-pa"></span></a>
-                    </li>
-
-                    <li data-action="mycoupon">
-                        <a class="f-pr s-fc0"><em class="coupon-icon"></em>我的优惠券<span class="f-pa"></span></a>
-                    </li>
-
-                    <li data-action="address">
-                        <a class="f-pr s-fc0"><em class="address"></em>我的收货地址<span class="f-pa"></span></a>
-                    </li>
-
-                    <li data-action="mainside">
-                        <a class="f-pr s-fc0"><em class="mainside"></em>网易云音乐首页<span class="f-pa"></span></a>
-                    </li>
-
-                    <li data-action="logout" class="bort">
-                        <a class="f-pr s-fc0"><em class="logout"></em>退出<span class="f-pa"></span></a>
-                    </li>
-
-                </ul>
-                <i class="arr" style="display: none;"></i>
+                    </div>
+                </div>
+                <div class="phone email">
+                    <p>网易邮箱账号登录</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox">
+                        <input type="email" value="" class="tel num" placeholder="请输入账号">
+                        <ul class="address">
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                            <li><a href="##"></a></li>
+                        </ul>
+                        <div class="none">
+                            <input type="password" value="" class="pass" placeholder="请输入密码">
+                            <i></i>
+                            <em></em>
+                            <input type="checkbox" class="check" checked="checked">
+                            <label>自动登录</label>
+                            <a href="##" class="forget">忘记密码？</a>
+                            <!--<input type="button" value="登录" class="entry">-->
+                            <a href="##" class="entry" data-href="over.html">登录</a>
+                        </div>
+                        <div class="line">
+                            <a href="##" class="left">< 其他登录方式</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone sign">
+                    <p>登录</p>
+                    <a class="back" href="##">×</a>
+                    <div class="computer  clearfix">
+                        <div>
+                            <img src="images/platform.png" alt="">
+                            <input type="button" value="手机号登录" >
+                            <input type="button" value="注册" class="enroll">
+                        </div>
+                        <ul>
+                            <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                            <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                            <li><i></i><a href="weibo.html" target="_blank">微博登录</a></li>
+                            <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="phone reg">
+                    <p>手机号注册</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox">
+                        <span>手机号:</span>
+                        <select name="" id="select2">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                        <span>密码:</span>
+                        <input type="password" value="" class="pass" placeholder="请输入密码">
+                        <i></i>
+                        <em></em>
+                        <input type="button" value="下一步" class="entry">
+                        <div class="line">
+                            <a href="##" class="left">< 返回登录</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone reg">
+                    <p>重设密码</p>
+                    <a class="back" href="##">×</a>
+                    <div class="inputBox">
+                        <span>手机号:</span>
+                        <select name="" id="select3">
+                            <option value="+86">+86</option>
+                        </select>
+                        <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                        <span>密码:</span>
+                        <input type="password" value="" class="pass" placeholder="请输入密码">
+                        <input type="button" value="下一步" class="entry">
+                        <div class="line">
+                            <a href="##" class="left">< 返回登录</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <div class="border f-pa"></div>
@@ -685,226 +736,9 @@
 </html>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/shopcartcy.js"></script>
+<script src="js/login.js"></script>
 <script>
     //加入购物车
     add_shoppingcart();
-//     function add_shoppingcart(btn){
-//         let $ncart=$(".n-cart");
-//         $ncart.html(`<div class="f-cb s-fc4 head">
-//                     <div class="check f-fl">
-//                         <i class="checkbox u-checkbox z-checked checkCy" id="checkCy1"></i>
-//                     </div>
-//                     <div class="cnt f-fl">
-//                         <div class="coverwrap f-fl s-fc333">全选</div>
-//                         <div class="product f-fl">商品</div>
-//                         <div class="pri1 f-fl f-tc">金额</div>
-//                         <div class="num f-fl f-tc">数量</div>
-//                         <div class="pri2 f-fl f-tc">小计</div>
-//                         <div class="man f-fl">操作</div>
-//
-//                     <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>
-//                 </div>
-//                 <ul>
-//                     <li class="f-cb s-fc4 first">
-//                         <div class="f-fl product allPro">全部商品&nbsp;(1)&nbsp;</div>
-//                         <div class="f-fr f-mgr20">
-//                             <!--Regular if9-->
-//            <div class="f-fl icon"><i></i></div>
-//            <div class="f-fl txt s-fc333">
-//            全场满<em class="s-fcTheme">¥119</em>免运费
-//            </div>
-//
-//            </div>
-//            </li>
-//            <!--Regular list-->
-//            <li class="f-cb">
-//            <div class="check f-fl">
-//            <i class="checkbox u-checkbox z-checked checkCy">
-//            </i>
-//            </div>
-//            <div class="cnt f-fl">
-//            <div class="coverwrap f-fl">
-//            <div class="cover f-bd2">
-//            <a target="_blank" href="/store/product/detail?id=9385002">
-//            <img src="http://p4.music.126.net/n2BjtdOPKdGYrdLGry2Mgw==/109951163324290601.jpg?param=80y80">
-//            </a>
-//            </div>
-//            </div>
-//            <!--Regular if10-->
-//            <div class="msg f-fl">
-//            <a target="_blank" href="/store/product/detail?id=9385002">
-//            <p class="tit f-thide">【新鲜到货】哆啦探索·哆啦A梦海洋大作战手机壳</p>
-//            </a>
-//            <p class="sku s-fc4 f-thide">透明款 IP6</p>
-//            </div>
-//
-//            <div class="price f-fl f-tc">¥<em class="cyyPrice">2288</em></div>
-//            <div class="ctrl f-fl f-pr f-tc">
-//            <div class="u-counter f-fl number">
-//            <a data-action="down" href="javascript:;" class="btn j-x"><i type="button" value="+" class="u-icn u-icn-27" onclick="decrease(this);"></i></a>
-//            <span class="tot">
-//            <input disabled="disabled" type="text" class="text f-fs1 j-x cyNum" value="1">
-//            </span>
-//            <a data-action="plus" href="javascript:;" class="btn j-x"><i class="u-icn u-icn-28" onclick="increase(this);"></i></a>
-//            </div>
-//            <!--Regular if11-->
-//            </div>
-//            <div class="price line f-fl f-tc cyPrice">2288</div>
-//            <div class="delete f-fl" onclick="deleteCy(this)">
-//            </div>
-//            </div>
-//            </li>
-//
-//            <li class="bottom" id="bottom" style="position: static; z-index: 1; bottom: 0px;">
-//            <div class="f-cb s-fc4">
-//            <div class="check f-fl">
-//            <i class="checkbox u-checkbox z-checked checkCy" id="checkCy"></i>
-//            </div>
-//            <div class="f-fl">
-//            <div class="coverwrap f-fl s-fc333">全选</div>
-//            <div class="product f-fl">已选择 <em class="s-fcTheme cyNumLeft">1</em> 件商品</div>
-//            </div>
-//            <div class="paybtn f-fr" onclick="checkOut(this);">结算</div>
-//            <div class="f-fr">
-//            <span class="s-fc4">
-//            <!--Regular if12-->
-//            已享受免运费
-//            &nbsp;|&nbsp;
-//            </span>
-//            <span class="s-fc1">合计&nbsp;:&nbsp;</span>
-//            <span class="f-fs20 s-fcTheme cyPrice">
-//            <!--Regular if13--><em>2288</em><!--Regular if14-->
-//            </span>
-//            </div>
-//            </div>
-//            </li>
-//            </ul>
-//            <!--Regular if15-->`);
-//         var $cyNumLeft=$(".cyNumLeft");
-//         CyChecked();
-//
-//         $cyNumLeft.html(1);
-//     }
-//     //加法
-//     function increase(btn){
-//         //获取数量
-//         var $cyNum=$(".cyNum");
-//         var $cyNumLeft=$(".cyNumLeft");
-//         var $allPro=$(".first>.allPro");
-//         var $cyyPrice=$(".cyyPrice");
-//         var $cyPrice=$(".cyPrice");
-//         var n=$cyNum.val();
-//         //+1,再写入框内
-//         $cyNum.val(++n);
-//         $cyNumLeft.html(n);
-//         $allPro.html(`全部商品&nbsp;(${ n })`);
-//         //获取单价
-//         var p=$cyyPrice.html();
-//
-//         //计算金额并写入金额列
-//         $cyPrice.html(p*n);
-//         sum();
-//     }
-//     //减法
-//     function decrease(btn){
-//         var $cyNum=$(".cyNum");
-//         var $cyNumLeft=$(".cyNumLeft");
-//         var $allPro=$(".first>.allPro");
-//         var $cyyPrice=$(".cyyPrice");
-//         var $cyPrice=$(".cyPrice");
-//         var n=$cyNum.val();
-//         //数量不能小于1
-//         if(n<= 1) {
-//             return;
-//         }
-//         $cyNum.val(--n);
-//         $cyNumLeft.html(n);
-//         $allPro.html(`全部商品&nbsp;(${ n })`);
-//         var p=$cyyPrice.html();
-//         $cyPrice.html(p*n);
-//         sum();
-//     }
-//     //删除
-//     function del(btn){
-//         var s=$(btn).parent().parent();
-//         $(s).remove();
-//         sum();
-//     }
-//     //求和
-//     function sum(){
-//         //获取tbody下所有的行
-//         var $trs = $("#goods tr");
-//         console.log($trs);
-//         console.log($trs.length);
-//         //遍历他们
-//         var sum = 0;
-//         for(var i=0;i<$trs.length;i++) {
-//             //获取每一行
-//             var $tr = $trs.eq(i);
-//             console.log($tr);
-//             //获取该行中第4列的值(金额/String)
-//             var mny =
-//                 $tr.children().eq(3).html();
-//             //    tds      td3     金额
-//             console.log(mny);
-//             sum += parseFloat(mny);
-//         }
-//         console.log(sum);
-//         //将合计值写入合计列
-//         $("#total").html(sum);
-//     };
-//     function checkOut(btn) {
-//         alert("结算成功");
-//     }
-//
-//     function CyChecked() {
-//         let $checkCy=$("#checkCy"),
-//             $checkCyClass=$(".checkCy"),
-//             $cyPrice=$(".cyPrice");
-//         var priceCheck=0;
-//         $checkCyClass.on("click",function () {
-//             console.log(this);
-//             $this=$(this)
-//
-//             if($(this).hasClass("z-checked")){
-//                 priceCheck=$cyPrice.children().html();
-//                 priceCheck=$cyPrice.html();
-//                 $this.removeClass("z-checked");
-//                 $checkCyClass.removeClass("z-checked");
-//                 $cyPrice.children().html("0");
-//                 $cyPrice.html("0");
-//             }else {
-//                 $this.addClass("z-checked");
-//                 $checkCyClass.addClass("z-checked");
-//                 $cyPrice.children().html(priceCheck);
-//                 $cyPrice.html(priceCheck);
-//
-//             }
-//         })
-//     }
-//         CyChecked()
-//
-//
-//     function deleteCy(btn) {
-//         let $ncart=$(".n-cart");
-//         var $cyNumLeft=$(".cyNumLeft");
-//         $ncart.html(`<div class="empty">
-// <i class="icon"></i>
-// <span class="f-fs3" style="margin-left: -10px;">
-// <span class="s-fc3 f-tc">购物车还是空的 ,</span>
-// <a href="/store/product" class="s-fcLink">去逛逛 &gt;</a>
-// </span>
-// <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe></div>`)
-//
-//
-//         $cyNumLeft.html(0);
-//     }
-//     // function checkAll(btn) {
-//     //     console.log(this);
-//     //     if(this.hasClass("z-checked")){
-//     //         this.removeClass("z-checked")
-//     //     }else {
-//     //         this.addClass("z-checked");
-//     //     }
-//     // }
+
 </script>

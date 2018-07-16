@@ -5,8 +5,11 @@
     <title>2018 03 js</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
     <link rel="stylesheet/less" href="css/index.less">
-    <link rel="stylesheet/" href="less/login.less">
+    <link rel="stylesheet/less" href="less/login.less">
+
     <script src="js/less (1).js"></script>
 
 
@@ -30,11 +33,14 @@
         </ul>
         </div>
         <div class="car">
+            <a href="购物车.html" style="color: white">
             <div class="img"><img src="img/4.png" alt=""></div>
-            <div class="radius">
+            <div class="radius numcy">
                 0
             </div>
+            </a>
         </div>
+        <div class="log">
         <div class="login1">
             <div class="loginTop">
                 <a href="##" class="a1">登录</a>
@@ -50,6 +56,111 @@
                     <li><i></i><a href="##">网易邮箱账号登录</a></li>
                 </ul>
             </div>
+        </div>
+        <div class="phone">
+            <p>手机号登录</p>
+            <a class="back" href="##">×</a>
+            <div class="inputBox clearfix">
+                <select name="" id="select1">
+                    <option value="+86">+86</option>
+                </select>
+                <input type="text" value="" class="tel only" placeholder="请输入账号" pattern="^1[35789]\d{10}">
+                <input type="password" value="" class="pass" placeholder="请输入密码" pattern="\w{6,16}">
+                <i></i>
+                <em></em>
+                <input type="checkbox" class="check" checked="checked">
+                <label>自动登录</label>
+                <a href="##" class="forget">忘记密码？</a>
+                <!--<input type="button" value="登录" class="entry">-->
+                <a href="##" class="entry" data-href="over.html">登录</a>
+                <div class="line">
+                    <a href="##" class="left"><       其他登录方式</a>
+                    <a href="##" class="right">没有账号？免费注册 ></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="phone email">
+            <p>网易邮箱账号登录</p>
+            <a class="back" href="##">×</a>
+            <div class="inputBox">
+                <input type="email" value="" class="tel num" placeholder="请输入账号">
+                <ul class="address">
+                    <li><a href="##"></a></li>
+                    <li><a href="##"></a></li>
+                    <li><a href="##"></a></li>
+                    <li><a href="##"></a></li>
+                    <li><a href="##"></a></li>
+                    <li><a href="##"></a></li>
+                </ul>
+                <div class="none">
+                    <input type="password" value="" class="pass" placeholder="请输入密码">
+                    <i></i>
+                    <em></em>
+                    <input type="checkbox" class="check" checked="checked">
+                    <label>自动登录</label>
+                    <a href="##" class="forget">忘记密码？</a>
+                    <!--<input type="button" value="登录" class="entry">-->
+                    <a href="##" class="entry" data-href="over.html">登录</a>
+                </div>
+                <div class="line">
+                    <a href="##" class="left">< 其他登录方式</a>
+                </div>
+            </div>
+        </div>
+        <div class="phone sign">
+            <p>登录</p>
+            <a class="back" href="##">×</a>
+            <div class="computer  clearfix">
+                <div>
+                    <img src="images/platform.png" alt="">
+                    <input type="button" value="手机号登录" >
+                    <input type="button" value="注册" class="enroll">
+                </div>
+                <ul>
+                    <li><i></i><a href="weixin.html" target="_blank">微信登录</a></li>
+                    <li><i></i><a href="qq.html" target="_blank">QQ登录</a></li>
+                    <li><i></i><a href="weibo.html" target="_blank">微博登录</a></li>
+                    <li><i></i><a href="##">网易邮箱账号登录</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="phone reg">
+            <p>手机号注册</p>
+            <a class="back" href="##">×</a>
+            <div class="inputBox">
+                <span>手机号:</span>
+                <select name="" id="select2">
+                    <option value="+86">+86</option>
+                </select>
+                <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                <span>密码:</span>
+                <input type="password" value="" class="pass" placeholder="请输入密码">
+                <i></i>
+                <em></em>
+                <input type="button" value="下一步" class="entry">
+                <div class="line">
+                    <a href="##" class="left">< 返回登录</a>
+                </div>
+            </div>
+        </div>
+        <div class="phone reg">
+            <p>重设密码</p>
+            <a class="back" href="##">×</a>
+            <div class="inputBox">
+                <span>手机号:</span>
+                <select name="" id="select3">
+                    <option value="+86">+86</option>
+                </select>
+                <input type="text" value="" class="tel only" placeholder="请输入手机号">
+                <span>密码:</span>
+                <input type="password" value="" class="pass" placeholder="请输入密码">
+                <input type="button" value="下一步" class="entry">
+                <div class="line">
+                    <a href="##" class="left">< 返回登录</a>
+                </div>
+            </div>
+        </div>
         </div>
         <!--<div id="box">-->
             <!--<div class="-->
@@ -129,11 +240,13 @@
                 七天无理由退货
             </div>
             <div class="sc2">
+                <a href="购物车.html">
                 <img src="img/4.png" alt="">
                 购物车
-                <div class="inner">
+                <div class="inner numcy">
                     0
                 </div>
+                </a>
             </div>
             <div class="et">
                 <div><img src="img/er.png" alt=""></div>
@@ -561,14 +674,20 @@
 <script src="js/animate.js"></script>
 <script src="js/uitle.js"></script>
 <script src="js/login.js"></script>
+<script src="js/shopcartcy.js">
+</script>
 <script src="js/js.js"></script>
 <script>
-    $("ul>li>a").each(function (index,item) {
+    $(".recommend >li>a").each(function (index,item) {
         item.href="details.html"
     });
     new Banner("banner","json/data.json");
 
+    if ($(".numcy").html==undefined){
+        $(".numcy").html(0)
+    }else {
+        $(".numcy").html(localStorage.cartNumber)
+    }
 
-    console.log($("ul>li>a")[0].href);
 </script>
  

@@ -20,10 +20,10 @@ var details=(function () {
             $bigBox.hide();
         });
         function position(e) {
-            console.log($(document).scrollTop());
+
             var $x=e.pageX-$smallBox.offset().left-$mask.outerWidth()/2;
             var $y=e.pageY-$smallBox.offset().top-$mask.outerHeight()/2;
-           console.log($y);
+
             var $maxLeft=$smallBox.outerWidth()-$mask.outerWidth();
             var $maxTop=$smallBox.outerHeight()-$mask.outerHeight();
             var $minLeft=0;
@@ -63,18 +63,25 @@ var details=(function () {
         window.localStorage.cartNumber=parseInt(cartsNum)+Number(phoneNum);
         $(".num").html(parseInt(cartsNum)+Number(phoneNum));
         add_shoppingcart();
+        let index=0;
+        console.log(arycart);
         arycart.forEach(item=>{
-            if (item.select==localStorage.objcart.select){
-                return
+            objc=JSON.parse(item)
+            objw=JSON.parse(localStorage.objcart);
+            console.log(objw.select);
 
+            if (objc.select==objw.select){
+                index=1
             }
-                arycart.push(localStorage.objcart);
-
         });
+        console.log(index);
+        if (index==0||arycart[0]=="" ){
+            arycart.push(localStorage.objcart);
+        }
 
 
         console.log(arycart);
-        // localStorage.arycart=arycart
+        localStorage.arycart=arycart
     }
     $(".num").html(localStorage.cartNumber);
     enlarge();
