@@ -18,7 +18,7 @@ let details=(function () {
     let getData=function getData() {
         return new Promise((resolve)=>{
             let xhr=new XMLHttpRequest();
-            xhr.open('get','./json/data.json',true);
+            xhr.open('get','./json/data1.json',true);
             xhr.onreadystatechange=()=>{
                 if(xhr.readyState==4&&xhr.status==200){
                     let data=JSON.parse(xhr.responseText);
